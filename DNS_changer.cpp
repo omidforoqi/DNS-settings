@@ -65,12 +65,12 @@ int main() {
   const char *command1 = str1.c_str();
   str2 = "netsh interface ip add dns \"Ethernet\" " + second_dns_ip + " index=2";
   const char *command2 = str2.c_str();
-  
+
   system(command1);
-  cout << "Set first DNS ";
+  cout << "Set first DNS";
   Sleep(50);
   system(command2);
-  cout << "Set second DNS \n";
+  cout << "Set second DNS\n";
   cout << "Done !!\nPress a key for exit...";
 
   _getch();
